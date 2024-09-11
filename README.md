@@ -1,2 +1,2 @@
-# F.A.S.T
+# F.A.T
 Webapp to track workouts
