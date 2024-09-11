@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="William Bartlik">
+    <meta name="description" content="Add an exercise">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <script src="functions.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>F.A.S.T New</title>
+</head>
+<body>
+    <header>
+        <h1>Add An Exercise</h1> 
+    </header>
+    <hr>
+    <main>
+        <form id="exerciseForm">
+            <label for="muscle" class="exerciseSelection">Muscle:</label>
+            <select name="muscle" id="muscle" onchange="updateExercises()" class="exerciseSelection">
+                <option value="Back">Back</option>
+                <option value="Biceps">Biceps</option>
+                <option value="Calves">Calves</option>
+                <option value="Chest">Chest</option>
+                <option value="Core">Core</option>
+                <option value="Forearms">Forearms</option>
+                <option value="Glutes">Glutes</option>
+                <option value="Hamstrings">Hamstrings</option>
+                <option value="Hip">Hip</option>
+                <option value="Quads">Quads</option>
+                <option value="Shoulders">Shoulders</option>
+                <option value="Traps">Traps</option>
+                <option value="Triceps">Triceps</option>
+                <option value="Other">Other</option>
+            </select>
+            <br>
+            <label for="exercise" class="exerciseSelection">Exercise:</label>
+            <select name="exercise" id="exercise" class="exerciseSelection">
+                <option value="Other">Other</option>
+            </select>
+            <br>
+            <label for="sets" class="exerciseSelection">Sets:</label>
+            <input type="number" name="sets" id="sets" class="exerciseSelection">
+            <br>
+            <label for="reps" class="exerciseSelection">Reps:</label>
+            <input type="number" name="reps" id="reps" class="exerciseSelection">
+            <br>
+            <label for="weight" class="exerciseSelection">Weight:</label>
+            <input type="number" name="weight" id="weight" class="exerciseSelection">
+            <br>
+            <label for="date" class="exerciseSelection">Date:</label>
+            <input type="date" name="date" id="date" class="exerciseSelection">
+            <br>
+            <button type="submit" id="submit" class="submitButton">Submit</button>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <nav class="nav-links">
+            <a href="home.html"><i class="fas fa-home"></i> Home</a>
+            <a href="new.html"><i class="fas fa-plus-circle"></i> New</a>
+            <a href="profile.html"><i class="fas fa-user-circle"></i> Profile</a>
+        </nav>
+    </footer>
+</body>
+</html>

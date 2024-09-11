@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background: #f9f9f9;
+    height: 10vh;
+}
+
+h1{
+    background: linear-gradient(to right, #0fb9e4, #04d353);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px 0;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    color: #f9f9f9;
+    text-align: left;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    background: linear-gradient(to right, #0fb9e4 0%, #04d353 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0.5rem 0 0 0;
+}
+
+main{
+    font-family: 'Poppins', sans-serif;
+    background: #f9f9f9;
+    height: 80vh;
+}
+footer{
+    height: 9vh;
+    background: #f9f9f9;
+    display: flex;
+}
+nav{
+    margin-top: auto;
+    display: flex;
+    width: 100%; 
+    justify-content: space-evenly;
+    background: linear-gradient(to right, #0fb9e4 0%, #04d353 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    margin-bottom: 7px;
+}
+
+.nav-links a .fa-home {
+    display: block; /* Make the icon block level to stack it above the text */
+    margin-bottom: 5px; /* Space between the icon and the text */
+    margin-left: 10px;
+}
+
+.nav-links a .fa-plus-circle {
+    display: block; /* Make the icon block level to stack it above the text */
+    margin-bottom: 5px; /* Space between the icon and the text */
+    margin-left: 8px;
+}
+
+.nav-links a .fa-user-circle{
+    display: block; /* Make the icon block level to stack it above the text */
+    margin-bottom: 5px; /* Space between the icon and the text */
+    margin-left: 14px;
+}
+
+hr{
+    border: none; /* Remove the default border */
+    height: 2px; /* Set the height of the line */
+    background: linear-gradient(to right, #0fb9e4 0%, #04d353 70%); /* Gradient background */
+}
+
+.profileP{
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 1rem;
+    background: linear-gradient(to right, #0fb9e4 0%, #04d353 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.exercise-log-button {
+    position: relative; /* Corrected from display: relative to position: relative */
+    width: 80%;
+    height: 40px;
+    color: #0fb9e4;
+    border: 2px solid #0fb9e4;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 0.8rem;
+    text-align: left;
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: space-between; /* Space out items */
+    padding: 0 10px; /* Add padding for space between text and divs */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+    margin: 5px 0;
+}
+
+.div1, .div2 {
+    background: linear-gradient(to right, #0fb9e4 0%, #04d353 70%);
+    width: 32px;
+    height: 6px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+}
+
+.div1 {
+    right: 10px; /* Position on the right side of the button */
+    transform: translateY(-50%) rotate(45deg); /* Center vertically and rotate */
+}
+
+.div2 {
+    right: 10px; /* Position on the right side of the button */
+    transform: translateY(-50%) rotate(-45deg); /* Center vertically and rotate */
+}
+
+.exerciseSelection{
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1rem;
+    background: linear-gradient(to right, #0c9bbe 0%, #037a31 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 7px 0;
+}
+
+.submitButton{
+    color: #0fb9e4;
+    border: 2px solid #0fb9e4;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1rem;
+    height: 30px;
+    width: 40%;
+    text-align: center;
+    margin: 7px 0;
+}
+
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    width: 75%;
+    text-align: center;
+}
+
+.close-btn {
+    color: #0c9bbe;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.exerContent{
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1rem;
+  
+}
+
+.exercise-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.p-entry{
+    width: 80%;
+    color: #0c9bbe;
+}
+
+.delete-btn {
+    margin: 5px 10px;
+    background: none;
+    color: #0c9bbe;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.delete-btn:hover {
+    color: black;
+}

@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    font-family: 'Poppins', sans-serif;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    background: linear-gradient(to right, #0fb9e4 0%, #04d353 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#username, #password, #email{
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.2rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+#submit{
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.2rem 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: linear-gradient(to right, #0fb9e4 0%, #04d353 100%);
+    color: white;
+    cursor: pointer;
+}
+
+header{
+    background: linear-gradient(to right, #0fb9e4, #04d353);
+    height: 10vh;
+}
+
+footer{
+    height: 10vh;
+    background: linear-gradient(to right, #0fb9e4, #04d353);
+}
+
+h1{
+    padding: 10px 0;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    color: #f9f9f9;
+    text-align: center;
+}
+
+a{
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    background: linear-gradient(to right, #0fb9e4 0%, #04d353 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
